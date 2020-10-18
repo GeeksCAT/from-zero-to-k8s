@@ -87,7 +87,7 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 ### Access the dashboard
 
 ```bash
-kubectly proxy
+kubectl proxy
 ```
 
 Open http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login in a browser
